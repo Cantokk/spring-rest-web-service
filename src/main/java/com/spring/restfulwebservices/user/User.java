@@ -9,6 +9,11 @@ public class User {
 
     private Date birthDate;
 
+    // Otherwise it will throw 500 error, since empty constructor has been override by the next constructor
+    protected User() {
+
+    }
+
     public User(Integer id, String name, Date birthDate) {
         super();
         this.id = id;
