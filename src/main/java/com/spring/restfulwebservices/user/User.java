@@ -1,12 +1,16 @@
 package com.spring.restfulwebservices.user;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class User {
     private Integer id;
 
+    @Size(min=2, message="Name should have atleast 2 characters")
     private String name;
 
+    @Past
     private Date birthDate;
 
     // Otherwise it will throw 500 error, since empty constructor has been override by the next constructor
