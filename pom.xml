@@ -37,7 +37,7 @@
 <!--			<groupId>com.fasterxml.jackson.dataformat</groupId>-->
 <!--			<artifactId>jackson-dataformat-xml</artifactId>-->
 <!--		</dependency>-->
-		
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>
